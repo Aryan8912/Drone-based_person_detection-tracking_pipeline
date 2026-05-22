@@ -1,4 +1,4 @@
-#  The Aerial Guardian 
+#  Dronw Based Person Detection Tracking Pipeline
 
 ##  ARCHITECTURE OVERVIEW
 
