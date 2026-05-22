@@ -1,7 +1,5 @@
 #  Dronw Based Person Detection Tracking Pipeline
 
-##  ARCHITECTURE OVERVIEW
-
 ### Base Model: YOLOv8n (Nano)
 - Chosen for ultra-lightweight size (6.3 MB vs 300 MB limit)
 - Fast inference (~20 FPS on A100)
