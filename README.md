@@ -94,34 +94,34 @@
 ### How We Handle ID Switching
 
 Problem 1 — Drone Ego-Motion:
-→ Drone moves → entire frame shifts
-→ ByteTrack thinks ALL persons moved
-→ IoU between predicted/detected boxes drops → ID switch
+- Drone moves → entire frame shifts
+- ByteTrack thinks ALL persons moved
+- IoU between predicted/detected boxes drops → ID switch
 
-Solution → EgoMotionCompensator:
-→ ORB feature matching between consecutive frames
-→ RANSAC homography estimation (removes moving persons)
-→ Compensate detection boxes using inverse homography
-→ Result: stable box positions despite camera movement
-→ Achieved 300+ inlier matches per frame (very high confidence)
+Solution - EgoMotionCompensator:
+- ORB feature matching between consecutive frames
+- RANSAC homography estimation (removes moving persons)
+- Compensate detection boxes using inverse homography
+- Result: stable box positions despite camera movement
+- Achieved 300+ inlier matches per frame (very high confidence)
 
 Problem 2 — Occlusion:
-→ Persons overlap → detector misses one
-→ Track lost → new ID assigned on reappearance
+- Persons overlap → detector misses one
+- Track lost → new ID assigned on reappearance
 
 Solution → ByteTrack two-stage matching:
-→ Stage 1: high-conf detections matched with Kalman prediction
-→ Stage 2: low-conf detections matched with lost tracks
-→ track_buffer=45: keeps lost track alive for 1.8 seconds
-→ Result: person reappears → same ID restored
+- Stage 1: high-conf detections matched with Kalman prediction
+- Stage 2: low-conf detections matched with lost tracks
+- track_buffer=45: keeps lost track alive for 1.8 seconds
+- Result: person reappears → same ID restored
 
 Problem 3 — Scale Variation (altitude changes):
-→ Drone ascends/descends → person size changes rapidly
-→ Kalman filter scale prediction may fail
+- Drone ascends/descends → person size changes rapidly
+- Kalman filter scale prediction may fail
 
-Solution → scale augmentation during training (scale=0.9)
-→ Model robust to size variations
-→ Kalman filter handles gradual scale changes
+Solution - scale augmentation during training (scale=0.9)
+- Model robust to size variations
+- Kalman filter handles gradual scale changes
 
 
 ## 3. OPTIMIZATION & FPS
