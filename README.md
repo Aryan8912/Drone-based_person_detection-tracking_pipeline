@@ -1,5 +1,4 @@
 #  The Aerial Guardian 
-================================================================
 
 ##  ARCHITECTURE OVERVIEW
 
