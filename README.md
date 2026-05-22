@@ -1,8 +1,7 @@
-#  The Aerial Guardian — Summary Report
+#  The Aerial Guardian 
 ================================================================
 
 ##  ARCHITECTURE OVERVIEW
-----------------------------------------------------------------
 
 ### Base Model: YOLOv8n (Nano)
 - Chosen for ultra-lightweight size (6.3 MB vs 300 MB limit)
