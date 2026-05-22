@@ -1,4 +1,4 @@
-#  Dronw Based Person Detection Tracking Pipeline
+#  Drone Based Person Detection Tracking Pipeline
 
 ### Base Model: YOLOv8n (Nano)
 - Chosen for ultra-lightweight size (6.3 MB vs 300 MB limit)
