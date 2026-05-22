@@ -9,7 +9,6 @@
 - Strong baseline mAP for nano-scale model
 # Drone-based_person_detection-tracking_pipeline
 <img width="2390" height="1096" alt="image" src="https://github.com/user-attachments/assets/5e7dc0bc-9768-43ec-9006-827aba9e13fb" />
-# Drone-based Multi-Object Person Tracking
 
 > Fine-tuned YOLOv8n + ByteTrack + Ego-Motion Compensation  
 > Built for VisDrone Dataset | Optimized for Edge Deployment
