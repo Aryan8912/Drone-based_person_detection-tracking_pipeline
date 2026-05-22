@@ -18,12 +18,6 @@
 
 ---
 
-## Personal tracked per frame
-
-<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/2d9264c5-f169-4e71-8d1c-b7f5a9407497" />
-
----
-
 ## 📊 Sample Tracked Frames
 
 <img width="2362" height="1377" alt="image" src="https://github.com/user-attachments/assets/e7693b0f-ea00-4e0a-bc2a-8fb3072c8257" />
@@ -83,6 +77,10 @@
 
 ## 2. TRACKING — ID SWITCHING PREVENTION
 ----------------------------------------------------------------
+
+## Personal tracked per frame
+
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/2d9264c5-f169-4e71-8d1c-b7f5a9407497" />
 
 ### ByteTrack Configuration (drone-tuned)
 - track_high_thresh : 0.35  (lower than default 0.5)
